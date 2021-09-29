@@ -1,0 +1,408 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <style>
+      .comparison {
+  max-width: 960px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  font: 13px/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: center;
+  padding: 10px;
+}
+.bg1{
+  background:#ecf1f6;
+  max-width:150px;
+}
+.bg2{
+  background:#d8e6ef;
+}
+.bg3{
+  background:#c0d5e3;
+}
+.bg4{
+  background:#8eb3ce;
+}
+.comparison table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  table-layout: auto;
+}
+
+.comparison td,
+.comparison th {
+  border-right: 1px solid #fff;
+  empty-cells: show;
+  padding: 10px;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  color: #808080;
+  font-size: 15px;
+}
+
+.comparison tbody tr:nth-child(odd) {
+  display: none;
+}
+
+.comparison .compare-row {
+  background: #F7F7F7;
+}
+
+.fa-times {
+  color: #545a5d;
+}
+
+.comparison th {
+  font-weight: normal;
+  padding: 0;
+  border-top: 0px solid #fff;
+  border-bottom: 0px solid #fff;
+}
+
+.comparison tr td:first-child {
+  text-align: left;
+  padding: 15px;
+  border-left: 1px solid #fff;
+  border-top: 1px solid #fff;
+}
+
+.comparison .product,
+.comparison .tl {
+  color: #FFF;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.comparison .tl2 {
+  border-right: 0;
+}
+
+.comparison .product {
+  background: #69C7F1;
+  font-size: 12px;
+}
+
+.comparison .price-info {
+  padding: 12px;
+}
+
+.comparison .price-now,
+.comparison .price-now span {
+  color: #808080;
+}
+
+.comparison .price-now span {
+  font-size: 12px;
+  color: #545454;
+}
+
+.comparison .price-now p {
+  font-size: 14px;
+  text-align: center;
+  line-height: 16px;
+  display: inline;
+}
+
+.comparison .price-buy {
+  background: #173591;
+  padding: 10px 20px;
+  font-size: 14px;
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 5px 0 10px 0;
+  letter-spacing: 1px;
+  cursor: pointer;
+  -webkit-transition: .3s all ease;
+  transition: .3s all ease;
+}
+
+.comparison .price-buy:hover {
+  background: #004d80;
+}
+
+@media screen and (min-width: 721px) and (max-width: 1000px) {
+  .table_ul li {
+    letter-spacing: 0px;
+  }
+  .comparison .price-now span {
+    font-size: 32px;
+  }
+  .comparison .price-now p {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .table_ul {
+    padding: 0px;
+  }
+  .table_ul li {
+    font-size: 10px;
+    line-height: 16px;
+    padding: 3px 0;
+  }
+  .comparison {
+    max-width: 100%;
+  }
+  .comparison td:first-child,
+  .comparison th:first-child {
+    display: none;
+  }
+  .comparison tbody tr:nth-child(odd) {
+    display: table-row;
+    background: #F7F7F7;
+  }
+  .comparison .row {
+    background: #FFF;
+  }
+  .comparison td,
+  .comparison th {
+    border: 1px solid #fff;
+    border-top: none;
+    padding: 10px;
+  }
+  .price-info {
+    border-top: 0 !important;
+    padding: 10px 0 !important;
+  }
+  .price-info p {
+    line-height: 8px;
+    font-size: 8px !important;
+  }
+  .comparison .compare-row {
+    background: #ffffff;
+  }
+  .comparison .price-now p {
+    display: block;
+  }
+  .comparison .price-now span {
+    font-size: 12px;
+  }
+  .comparison .qbse {
+    font-size: 1.2em;
+  }
+  .comparison td {
+    font-size: 14px;
+  }
+  .comparison th {
+    font-size: 14px;
+  }
+}
+  </style>  
+
+    <div class="comparison">
+        <table>
+          <thead>
+            <tr>
+              <th class="tl tl2"></th>
+              <th class="product bg2">Self-service </th>
+              <th class="product">Classic</th>
+              <th class="product">Premium</th>
+            </tr>
+            <tr>
+              <th></th>
+              <th class="price-info bg2">
+                <div class="price-now"><span>US$650</span>
+                </div>
+              </th>
+              <th class="price-info bg3">
+                <div class="price-now"><span>US$1,500</span>
+                </div>
+              </th>
+              <th class="price-info bg4">
+                <div class="price-now"><span>US$3,800</span>
+                </div>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td></td>
+              <td class="bg1" colspan="3">1. Check if your desired company name is available</td>
+            </tr>
+            <tr class="compare-row">
+              <td class="bg1" >1. Check if your desired company name is available</td>
+              <td class="bg2"><i class="fa fa-times"></i></td>
+              <td class="bg3"><i class="fa fa-times"></i></td>
+              <td class="bg4"><i class="fa fa-times"></i></td>
+            </tr>
+            <tr>
+              <td> </td>
+              <td class="bg1" colspan="3">2. Reservation of your company name </td>
+            </tr>
+            <tr>
+              <td class="bg1">2. Reservation of your company name </td>
+              <td class="bg2"><i class="fa fa-times"></i></td>
+              <td class="bg3"><i class="fa fa-times"></i></td>
+              <td class="bg4"><i class="fa fa-times"></i></td>
+            </tr>
+            <tr>
+              <td> </td>
+              <td colspan="3" class="bg1">3. Tailored assistance on incorporation</td>
+            </tr>
+            <tr class="compare-row">
+              <td class="bg1">3. Tailored assistance on incorporation</td>
+              <td class="bg2"></td>
+              <td class="bg3"></td>
+              <td class="bg4"><i class="fa fa-times"></i></td>
+            </tr>
+            <tr>
+              <td> </td>
+              <td colspan="4" class="bg1">4. Incorporation:<br/>
+      - Local director required*<br/>
+      - Registered address<br/>
+                <br/>
+                *Procosec Asia can provide both.<br/> Please, refer to the list of Annual <br/>Services under the Services tab
+      </td>
+            </tr>
+            <tr>
+              <td class="bg1">4. Incorporation:<br/>
+      - Local director required*<br/>
+      - Registered address<br/><br/>
+                *Procosec Asia can provide both.<br/> Please, refer to the list of Annual <br/>Services under the Services tab
+      </td>
+              <td class="bg2"><i class="fa fa-times"></i></td>
+              <td class="bg3"><i class="fa fa-times"></i></td>
+              <td class="bg4"><i class="fa fa-times"></i></td>
+            </tr>
+            <tr>
+              <td> </td>
+              <td colspan="3" class="bg1">5. Standard company by-laws</td>
+            </tr>
+            <tr class="compare-row">
+              <td class="bg1">5. Standard company by-laws</td>
+              <td class="bg2"><i class="fa fa-times"></i></td>
+              <td class="bg3"><i class="fa fa-times"></i></td>
+              <td class="bg4"><i class="fa fa-times"></i></td>
+            </tr>
+            <tr>
+              <td> </td>
+              <td colspan="4" class="bg1">6. Share certificate for the first shareholder</td>
+            </tr>
+            <tr>
+              <td class="bg1">6. Share certificate for the first shareholder</td>
+              <td class="bg2"><i class="fa fa-times"></i></td>
+              <td class="bg3"><i class="fa fa-times"></i></td>
+              <td class="bg4"><i class="fa fa-times"></i></td>
+            </tr>
+            <tr>
+              <td> </td>
+              <td colspan="3" class="bg1">7. Company secretarial file and register start-up kit</td>
+            </tr>
+            <tr class="compare-row">
+              <td class="bg1">7. Company secretarial file and register start-up kit</td>
+              <td class="bg2"><i class="fa fa-times"></i></td>
+              <td class="bg3"><i class="fa fa-times"></i></td>
+              <td class="bg4"><i class="fa fa-times"></i></td>
+            </tr>
+            <tr>
+              <td> </td>
+              <td colspan="3" class="bg1">8. Common seal</td>
+            </tr>
+            <tr>
+              <td class="bg1">8. Common seal</td>
+              <td class="bg2"></td>
+              <td class="bg3"><i class="fa fa-times"></i></td>
+              <td class="bg4"><i class="fa fa-times"></i></td>
+            </tr>
+            <tr>
+              <td> </td>
+              <td colspan="3" class="bg1">9. Company rubber stamp</td>
+            </tr>
+            <tr class="compare-row">
+              <td class="bg1">9. Company rubber stamp</td>
+              <td class="bg2"></td>
+              <td class="bg3"></td>
+              <td class="bg4"><i class="fa fa-times"></i></td>
+            </tr>
+            
+             <tr>
+              <td> </td>
+              <td class="bg1" colspan="3">10. List of all compliance deadlines for your company</td>
+            </tr>
+            <tr class="compare-row">
+              <td class="bg1">10. List of all compliance deadlines for your company</td>
+             <td class="bg2"><i class="fa fa-times"></i></td>
+              <td class="bg3"><i class="fa fa-times"></i></td>
+              <td class="bg4"><i class="fa fa-times"></i></td>
+            </tr>
+             <tr>
+              <td> </td>
+              <td colspan="3" class="bg1">11. Deadlines notifications</td>
+            </tr>
+            <tr class="compare-row">
+              <td class="bg1">11. Deadlines notifications</td>
+              <td class="bg2"></td>
+              <td class="bg3"></td>
+              <td class="bg4"><i class="fa fa-times"></i></td>
+            </tr>
+             <tr>
+              <td> </td>
+              <td colspan="3" class="bg1">12. Hour of Q&A with our expert</td>
+            </tr>
+            <tr class="compare-row">
+              <td class="bg1">12. Hour of Q&A with our expert</td>
+              <td class="bg2"></td>
+              <td class="bg3"><i class="fa fa-times"></i></td>
+              <td class="bg4"></td>
+            </tr>
+             <tr>
+              <td> </td>
+              <td colspan="3" class="bg1">13. 5 hours of Q&A with our expert</td>
+            </tr>
+            <tr class="compare-row">
+              <td class="bg1">13. 5 hours of Q&A with our expert</td>
+              <td class="bg2"></td>
+              <td class="bg3"></td>
+              <td class="bg4"><i class="fa fa-times"></i></td>
+            </tr>
+             <tr>
+              <td> </td>
+              <td colspan="3" class="bg1">14. Bank accounts opening (x2 accounts)</td>
+            </tr>
+            <tr class="compare-row">
+              <td class="bg1">14. Bank accounts opening (x2 accounts)</td>
+              <td class="bg2"></t>
+              <td class="bg3"></td>
+              <td class="bg4"><i class="fa fa-times"></i></td>
+            </tr>
+             <tr>
+              <td> </td>
+              <td colspan="3" class="bg1">15. Registered addres</td>
+            </tr>
+            <tr class="compare-row">
+              <td class="bg1">15. Registered addres</td>
+              <td class="bg2"></td>
+              <td class="bg3"></td>
+              <td class="bg4"></td>
+            </tr>
+            
+            
+            <tr>
+              <td></td>
+            </tr>
+           
+            <tr>
+              <td></td>
+              <td><a href="https://portal.procosecasia.com/index.php?r=company%2Fcreate&pId=1" class="price-buy">Select ><span class="hide-mobile"></span></a></td>
+              <td><a href="https://portal.procosecasia.com/index.php?r=company%2Fcreate&pId=2" class="price-buy">Select ><span class="hide-mobile"></span></a></td>
+              <td><a href="https://portal.procosecasia.com/index.php?r=company%2Fcreate&pId=3" class="price-buy">Select ><span class="hide-mobile"></span></a></td>
+            </tr>
+          </tbody>
+        </table>
+      
+      </div>
+
+
+
+</body>
+</html>
